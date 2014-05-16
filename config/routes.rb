@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  get 'people/show'
+
+  get 'search/index'
+
+  get 'home/index'
+
   resources :movies, only: :show
   resources :people, only: :show
 
